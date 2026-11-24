@@ -4,15 +4,17 @@ SlateDesk is derived in part from [Tuhi](https://github.com/tuhiproject/tuhi), t
 
 Upstream revision: [`aea086fa321a9e6d93ebd013eb6743c175843acf`](https://github.com/tuhiproject/tuhi/tree/aea086fa321a9e6d93ebd013eb6743c175843acf). GitHub HEAD matched this revision when inspected on 23 November 2026.
 
+Checksums use the exact canonical Git blobs from the upstream revision (LF line endings), independent of Windows checkout settings.
+
 ## Unmodified upstream files
 
 | SlateDesk path | Upstream path | SHA-256 |
 |---|---|---|
-| `tuhi/protocol.py` | [tuhi/protocol.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/tuhi/protocol.py) | `aab116e2cba1bb276c16c96a45d3e663dba4a863bdf0f3b2b0b68674e9977f95` |
-| `tuhi/util.py` | [tuhi/util.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/tuhi/util.py) | `999167472bac54bd0ac2d1ef6ef29e5196fa4f03e9cfe6a6dd2bb42f9e44dffd` |
+| `tuhi/protocol.py` | [tuhi/protocol.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/tuhi/protocol.py) | `cf659469231960e5249984998d03561883c89d3bfd5ce912629e3032b76105db` |
+| `tuhi/util.py` | [tuhi/util.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/tuhi/util.py) | `dfef3b526b51ad20fdfcd70b1281750e7c6e8547c0e95419581f14086c64449f` |
 | `tuhi/__init__.py` | [tuhi/__init__.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/tuhi/__init__.py) | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `tests/test_messages.py` | [test/test_messages.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/test/test_messages.py) | `f2597a91b457a66567506a79211e0828785bd4db7a145866442f5d590992b5dc` |
-| `tests/test_strokes.py` | [test/test_strokes.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/test/test_strokes.py) | `d827bbcf75ce2bda8cf8890335c07907e0239b9a5ade9cc56983bd03a8d08a7f` |
+| `tests/test_messages.py` | [test/test_messages.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/test/test_messages.py) | `c4e0f2cf4d6a9fb4f75185a0cf29e2761e5af766670c6631f7b2412aff4cc01a` |
+| `tests/test_strokes.py` | [test/test_strokes.py](https://github.com/tuhiproject/tuhi/blob/aea086fa321a9e6d93ebd013eb6743c175843acf/test/test_strokes.py) | `e1292fe1d5e36eef27c9c6700c4209b907445a185e39ad1009158d529bf205fe` |
 
 ## New Windows implementation
 
