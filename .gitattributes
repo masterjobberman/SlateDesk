@@ -1,0 +1,6 @@
+# Preserve exact upstream bytes so UPSTREAM.md checksums remain meaningful.
+tuhi/protocol.py -text
+tuhi/util.py -text
+tuhi/__init__.py -text
+tests/test_messages.py -text
+tests/test_strokes.py -text

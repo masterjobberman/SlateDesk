@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a SlateDesk problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include personal drawings, devices.json, registration tokens or unredacted Bluetooth addresses."
+  - type: input
+    id: version
+    attributes:
+      label: SlateDesk version
+      placeholder: "1.6"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Windows and device details
+      description: Windows version, Slate size/model, Bluetooth adapter and firmware if known.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Steps, expected result, actual result, and whether deletion was enabled.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics
+      description: Remove private device identifiers and drawing data before sharing.

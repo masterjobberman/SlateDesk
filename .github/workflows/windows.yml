@@ -1,0 +1,36 @@
+name: Windows build and tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          architecture: x64
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements-lock.txt
+      - name: Protocol, storage and transfer tests
+        run: python -m pytest tests -q -k "not test_gui"
+      - name: GUI rendering test
+        run: python -m pytest tests/test_app.py::test_gui -q
+      - name: Progress and library GUI test
+        run: python -m pytest tests/test_progress.py::test_gui_progress_refresh_and_library_completion -q
+      - name: Build Windows app
+        run: python -m PyInstaller --noconfirm --windowed --onedir --name SlateDesk --collect-all bleak --collect-all winrt --copy-metadata bleak --add-data "LICENSE;." app.py
+      - name: Include documentation and licenses
+        shell: pwsh
+        run: |
+          Copy-Item LICENSE,README.md,UPSTREAM.md,CHANGELOG.md,THIRD-PARTY-NOTICES.txt,PYTHON-LICENSE.txt,TK-LICENSE.txt -Destination dist/SlateDesk
+          Copy-Item docs -Destination dist/SlateDesk/docs -Recurse
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SlateDesk-Windows-x64
+          path: dist/SlateDesk
