@@ -4,13 +4,17 @@
 
 Download stored handwritten pages, preview them in portrait, and export SVG, PNG or PDF without Inkspace, Linux, WSL or a cloud account.
 
-[Download Windows app](https://github.com/masterjobberman/SlateDesk/releases/tag/v1.6.0) · [Getting started](#getting-started) · [Tuhi attribution](UPSTREAM.md) · [Feature comparison](docs/tuhi-comparison.md)
+[Download Windows app](https://github.com/masterjobberman/SlateDesk/releases/latest) · [Getting started](#getting-started) · [Tuhi attribution](UPSTREAM.md) · [Feature comparison](docs/tuhi-comparison.md)
 
 ![SlateDesk showing its transfer controls and a synthetic sample drawing](docs/screenshot.png)
 
 *Screenshot shows a synthetic sample, not a real downloaded drawing.*
 
 ## Download
+
+**[Download the full Windows build](https://github.com/masterjobberman/SlateDesk/releases/download/v1.6.0/SlateDesk-1.6-Windows-x64.zip)** · [Latest release](https://github.com/masterjobberman/SlateDesk/releases/latest)
+
+The complete portable and source ZIPs are also versioned in [`releases/v1.6.0`](releases/v1.6.0). In a development checkout with the portable build installed, launch `dist/SlateDesk/SlateDesk.exe`. To install the versioned portable bundle locally, extract `releases/v1.6.0/SlateDesk-1.6-Windows-x64.zip` into `dist`.
 
 Get **SlateDesk-1.6-Windows-x64.zip** from [Releases](https://github.com/masterjobberman/SlateDesk/releases). Extract the whole ZIP and open `SlateDesk/SlateDesk.exe`. Keep the `_internal` folder beside the EXE. Python is bundled; no installation or administrator access is required by the application.
 

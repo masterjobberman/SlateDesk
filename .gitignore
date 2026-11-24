@@ -12,3 +12,6 @@ devices.json
 diagnostics.log
 .env
 pages/
+
+# Published release bundles are intentionally versioned.
+!releases/v1.6.0/*.zip

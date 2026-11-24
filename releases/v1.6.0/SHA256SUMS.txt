@@ -1,0 +1,2 @@
+383ce50d6b91340d2155593aa2ffbbd77267323ba1a48e734b8b8a5b92a2f5c2  SlateDesk-1.6-Source.zip
+c3e27ec1d2ad9a5524024c5305c3c3ca5b1484d80e092bec1040ac5dd3646722  SlateDesk-1.6-Windows-x64.zip
